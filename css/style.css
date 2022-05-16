@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  line-height: 25px;
+}
+
+a {
+  color: white;
+}
+
+main {
+  padding: 10px;
+  max-width: 1366px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  padding: 10px;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h3 > span {
+  font-family: "Bebas Neue", cursive;
+}
+h5 {
+  font-size: x-large;
+  padding: 10px;
+}
+/*HEADER*/
+header {
+  background-color: black;
+}
+
+#navbarLogo {
+  background: url(../imagenes/marvelLogo.png) no-repeat center;
+  height: 46px;
+}
+nav > ul {
+  margin: auto;
+  width: fit-content;
+}
+nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 10px 20px;
+  width: auto;
+}
+
+nav > ul > li > ul {
+  position: absolute;
+  top: 40px;
+  display: none;
+  background-color: rgb(0, 0, 0);
+  padding-inline-start: 0px;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  width: auto;
+}
+
+nav > ul > li > ul > li {
+  margin: 10px;
+}
+
+nav li:hover > a {
+  color: red !important;
+}
+/*SECTION BANNER*/
+.banner {
+  background: url(../imagenes/bannerIronMan.jpg) no-repeat;
+  background-size: cover;
+  height: 596px;
+  margin: 0;
+}
+
+.banner > h1 {
+  color: rgb(179, 12, 12);
+  top: 50px;
+  padding-top: 150px;
+  padding-left: 105px;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.banner > p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-top: 10%;
+  padding: 35px;
+  display: inline;
+  float: right;
+  width: 50%;
+  height: auto;
+}
+
+/* MAIN */
+
+main > section > ul > li {
+  margin-top: 130px;
+}
+
+section {
+  margin-top: 100px;
+}
+section > h3 {
+  margin-top: 100px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container * {
+  display: inline-block;
+}
+
+.container > .content {
+  position: relative;
+  vertical-align: top;
+  margin: 50px;
+  margin-left: 200px;
+  width: 40%;
+}
+
+.container > .content-right {
+  margin-left: 50%;
+}
+
+.--red-background {
+  background-color: #99000081;
+}
+
+.--gray-background {
+  background-color: #333333;
+}
+
+.--light-gray-background {
+  background: linear-gradient(
+    87deg,
+    rgba(255, 255, 255, 0.48503151260504207) 14%,
+    rgba(51, 51, 51, 0.4290091036414566) 50%,
+    rgba(241, 242, 242, 0.6250875350140056) 99%
+  );
+}
+
+.container > .image {
+  right: 0;
+  top: -10px;
+  position: absolute;
+  width: auto;
+}
+
+.container > ul {
+  margin: 100px 10px;
+}
+
+.image-left {
+  left: 0;
+}
+
+.content > q {
+  color: #cc9966;
+  font-size: x-large;
+  padding: 10px;
+}
+
+#umcImage {
+  background: url(../imagenes/tonyStark.jpg) no-repeat;
+  width: 526px;
+  height: 350px;
+}
+
+#revelationImage {
+  background: url(../imagenes/rjb.jpg) no-repeat;
+  width: 450px;
+  height: 274px;
+  background-size: cover;
+}
+
+.--white-font {
+  color: white;
+}
+
+.sideBySideContent {
+  text-align: center;
+}
+
+#film > .sideBySideContent > li {
+  width: 40%;
+}
+
+.sideBySideContent > * {
+  display: inline-block;
+  padding: 10px;
+}
+
+ol > li {
+  color: #cc9966;
+  font-size: 25px;
+}
+dt {
+  height: 100%;
+  width: fit-content;
+  padding: 10px;
+  background: #c6a972;
+  position: relative;
+  margin-top: 30px;
+}
+dt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 10px solid white;
+  border-left: 10px solid #c6a972;
+  width: 0;
+}
+
+#quote {
+  margin-top: 30px;
+  position: relative;
+}
+
+#quote > .container > .image {
+  background: url(../imagenes/ironManTres.jpg);
+  width: 350px;
+  height: 233px;
+}
+
+#quote > .container > .content-right {
+  margin-left: 35%;
+}
+
+#signature {
+  background: url(../imagenes/theMechanic.png);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  padding: 1%;
+}
+
+/* footer > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+footer > ul {
+  width: 100%;
+}
+
+footer > ul > * {
+  width: 24%;
+  vertical-align: middle;
+}
+
+footer > ul > li {
+  display: inline-block;
+  color: white;
+}
+
+footer > ul > li > img {
+  border-radius: 50%;
+}
+
+footer > ul > li > ul {
+  padding: 0;
+}
+footer > ul > li > a {
+  text-indent: -900px;
+}
